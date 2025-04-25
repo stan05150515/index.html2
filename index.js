@@ -13,7 +13,7 @@ function openiframe(index){
             c.innerHTML = '<iframe src="blogs_doge.html" frameborder="1"></iframe>';    
             break;
         case 4:
-            c.innerHTML = '<iframe src="blogs_期中.html" frameborder="1"></iframe>';    
+            c.innerHTML = '<iframe src="blogs_b.html" frameborder="1"></iframe>';    
             break;        
     }
     console.log(index);//控台輸出
