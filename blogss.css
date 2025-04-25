@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, system-ui, -apple-system,
+    BlinkMacSystemFont;
+  background: var(--grey-light);
+  color: rgba(102, 24, 24, 0.705);
+  font-size: 12px;
+
+  --article-width: 350px;
+}
+
+:root {
+
+  --primary: #645cff;
+  
+  --primary-dark: #3c3799;
+  
+  --grey-light: #f1f5f9;
+  
+  --grey: #64748b;
+  
+  --grey-dark: #0f172a;
+  
+  --letter-spacing: 2px;
+  
+  --fluid-width: 90vw;
+  
+  --max-width: 1170px;
+  
+  --border-radius: 0.15rem;
+  
+  }
+.blogs-center {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+img {
+  height: 12rem;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.blog {
+  background-color:rgba(255, 255, 255, 0.986);
+  padding: 0.75rem;
+  border-radius: var(--border-radius); /*邊邊是圓的*/
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgb(150, 150, 150);
+  transition: 0.5s ease-in-out all;
+}
+
+.b1 {
+  border:1px solid  rgb(252, 173, 185);
+}
+
+.b2 {
+  border:1px solid  rgb(142, 201, 250);
+}
+
+.b3 {
+  border:1px solid  rgb(151, 253, 168);
+}
+
+.b4 {
+  border:1px solid  rgb(255, 253, 140);
+}
+
+.blog img {
+  width: 90%;
+  height: auto; /* 保持比例 */
+  object-fit: contain; /* 讓整張圖片顯示出來 */
+  margin-bottom: auto;
+  left: 50%;
+}
+
+
+.blog-content {
+  padding-bottom: 1rem;
+}
+
+.blog-content span {
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: var(--letter-spacing);
+  font-weight: 500;
+}
+
+.blogs-content h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.blogs-content p {
+  color: var(--grey);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 0.85rem;
+  /*display: -webkit-box;*/
+  line-clamp: 3;  /* 最多 3 行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+/*
+.blog-content a {
+  text-transform: capitalize;
+  color: var(--primary-dark);
+  letter-spacing: 1px;
+}
+  */
+
+@media screen and (max-width: 450px) {
+  .blogs-center {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: -150px;
+    scale: 0.8;
+  }
+}
+@media screen and (min-width: 900px) {
+  .blogs-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.blogs-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 調整最小寬度為 200px */
+  gap: 1rem; /* 減少卡片之間的間距 */
+  margin: 0 auto;
+  overflow: hidden; /* 防止內容溢出 */
+}
+
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  margin-top: 10px;
+  justify-content: space-between; /* 讓大頭貼和按鈕分兩邊 */
+  flex-wrap: nowrap;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: white;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.bt1 {
+  background-color: lightpink;
+  color: rgb(238, 83, 106);
+}
+
+.bt2 {
+  background-color:  rgb(142, 201, 250);
+  color:  rgb(67, 144, 207);
+}
+
+.bt3 {
+  background-color:  rgb(151, 253, 168);
+  color:  rgb(48, 202, 74);
+}
+
+.bt4 {
+  background-color:  rgb(255, 253, 140);
+  color: rgb(136, 69, 14);
+}

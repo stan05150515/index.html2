@@ -1,0 +1,41 @@
+body {
+  background-color: rgba(249, 249, 249, 0.899);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+  background-color: #ffffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  max-width: 300px;
+  margin: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.card-1 {
+  border-color: #ff69af;
+}
+
+.card-2 {
+  border-color: rgb(83, 123, 214);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.btn-1 {
+  background: #ffe8fe;
+  color: #ff69af;
+}
+
+.btn-2 {
+  background: #ecf4ff;
+  color: rgb(83, 123, 214);
+}

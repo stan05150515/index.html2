@@ -1,0 +1,14 @@
+p {
+  color: rgb(163, 42, 33);
+}
+img {
+  height: 15rem;
+  width: auto;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.article-img {
+  height: auto;
+  width: auto;
+}

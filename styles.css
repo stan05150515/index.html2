@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #4A90E2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #d0021b;
+}
+
+.con {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+img {
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}

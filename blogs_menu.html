@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連結頁面</title>
+    <link rel="stylesheet" href="blog-5.css">
+    <style>
+        iframe{
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header">
+        <nav class="main-menu">
+            <div class="header-media left">
+                <!--img src="nav.jpg" width="160" alt=""></video>-->
+                <!-- 或使用圖片：<img src="yourimage.jpg" width="160"> -->
+            </div>
+        </nav>
+    </header>
+    <nav class="nav">
+        <ul class="nav-link right-align">
+            <li onclick="openiframe(1)"><a href="#">W01 practice</a></li>
+            <li onclick="openiframe(2)"><a href="#">W03 card</a></li>
+            <li onclick="openiframe(3)"><a href="#">W04 blog</a></li>
+            <li onclick="openiframe(4)"><a href="#">W04 Lastest Blog</a></li>
+        
+        </ul>
+    </nav>
+    <div class="show-classdemo">
+        <iframe src="takeda.html" width="600" height="550" frameborder="1"></iframe>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
